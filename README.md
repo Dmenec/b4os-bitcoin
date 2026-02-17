@@ -1,3 +1,5 @@
+Welcome! This repository is a Bitcoin Core workshop sandbox for the b4os residency and is not the official Bitcoin Core project. If you are participating, please fork this repository and open all pull requests here so we can review your work together.
+
 Bitcoin Core integration/staging tree
 =====================================
 
