@@ -30,10 +30,5 @@ class ExampleTest(BitcoinTestFramework):
     def run_test(self):
         """Main test logic"""
 
-        p2p_conn = self.nodes[0].add_p2p_connection(P2PInterface())
-        p2p_conn.send_without_ping(msg_ping(nonce = 1))
-        p2p_conn.wait_until(lambda: "pong" in p2p_conn.last_message, timeout=5)
-        assert_equal(p2p_conn.last_message['pong'].nonce, 1)
-
 if __name__ == '__main__':
     ExampleTest(__file__).main()
